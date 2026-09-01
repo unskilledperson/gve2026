@@ -32,14 +32,6 @@
   max-width: 240px;
   object-fit: contain;
   display: block;
-  filter: contrast(1.25) brightness(1.05) saturate(1.2);
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: auto;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  -webkit-font-smoothing: antialiased;
-  -ms-interpolation-mode: bicubic;
 }
 
 .logo-fallback {
