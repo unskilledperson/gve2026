@@ -1,0 +1,82 @@
+{
+  "name": "global-vision-edu",
+  "version": "1.0.0",
+  "description": "Global Vision Education Consultants Landing Page",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.10.1",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "server": "node server.js",
+    "dev": "concurrently \"npm start\" \"npm run server\"",
+    "clean": "node -e \"const fs=require('fs'); const rm=p=>{try{fs.rmSync(p,{recursive:true,force:true});}catch(e){}}; ['build','dist','.cache','.parcel-cache','node_modules/.cache','.eslintcache'].forEach(rm); console.log('Cleaned build/tool caches.');\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "reactSnap": {
+    "include": [
+      "/",
+      "/about",
+      "/services",
+      "/courses",
+      "/contact",
+      "/courses/10th-grade",
+      "/courses/12th-grade",
+      "/courses/bba",
+      "/courses/bca",
+      "/courses/ba",
+      "/courses/bsc",
+      "/courses/bcom",
+      "/courses/bed",
+      "/courses/mba",
+      "/courses/mca",
+      "/courses/ma",
+      "/courses/msc",
+      "/courses/mcom",
+      "/courses/med",
+      "/services/distance-education",
+      "/services/certificate-attestation",
+      "/services/credit-transfer",
+      "/services/equivalency-certificate"
+    ],
+    "skipThirdPartyRequests": true,
+    "cacheAjaxRequests": false,
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "minifyHtml": {
+      "collapseWhitespace": true,
+      "removeComments": true
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

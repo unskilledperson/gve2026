@@ -1,0 +1,276 @@
+.consultation-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.consultation-popup-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  max-width: 450px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: slideUp 0.3s ease;
+  margin: auto;
+  filter: none !important;
+  isolation: isolate;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.consultation-popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #526d7a;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  z-index: 1;
+}
+
+.consultation-popup-close:hover {
+  color: #0f242e;
+  background-color: #f3f4f6;
+}
+
+.consultation-popup-content {
+  padding: 2rem;
+}
+
+.consultation-popup-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f242e;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+}
+
+.consultation-popup-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #526d7a;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.consultation-popup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.consultation-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.consultation-form-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f242e;
+}
+
+.consultation-form-input {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  color: #0f242e;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+.consultation-form-input:focus {
+  outline: none;
+  border-color: #06b795;
+  box-shadow: 0 0 0 3px rgba(6, 183, 149, 0.1);
+}
+
+.consultation-form-input::placeholder {
+  color: #9ca3af;
+}
+
+.consultation-form-submit {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  background: linear-gradient(135deg, #006772 0%, #06b795 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 0.25rem;
+}
+
+.consultation-form-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 103, 114, 0.4);
+}
+
+.consultation-form-submit:active {
+  transform: translateY(0);
+}
+
+.consultation-form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.consultation-form-submit:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.consultation-form-message {
+  padding: 0.875rem 1rem;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.consultation-form-message.success {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+}
+
+.consultation-form-message.error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .consultation-popup-overlay {
+    padding: 1rem;
+  }
+
+  .consultation-popup-container {
+    max-width: 400px;
+    width: 90%;
+    border-radius: 12px;
+  }
+
+  .consultation-popup-content {
+    padding: 1.75rem 1.5rem;
+  }
+
+  .consultation-popup-title {
+    font-size: 1.35rem;
+  }
+
+  .consultation-popup-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .consultation-popup-close {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 32px;
+    height: 32px;
+  }
+
+  .consultation-popup-form {
+    gap: 1rem;
+  }
+
+  .consultation-form-input {
+    padding: 0.7rem 0.875rem;
+    font-size: 0.9rem;
+  }
+
+  .consultation-form-submit {
+    padding: 0.8rem 1.75rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .consultation-popup-container {
+    max-width: 350px;
+    width: 95%;
+  }
+
+  .consultation-popup-content {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .consultation-popup-title {
+    font-size: 1.2rem;
+  }
+
+  .consultation-popup-subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .consultation-popup-form {
+    gap: 1rem;
+  }
+}
+

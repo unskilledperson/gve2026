@@ -1,0 +1,229 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #FBF2E7;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(6, 183, 149, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(0, 103, 114, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(6, 183, 149, 0.05) 0%, transparent 50%);
+  background-size: 100% 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.app-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================
+   Global mobile-safe base
+   ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent oversized hero shapes / absolute ornaments from causing side scroll */
+section[class$="-hero-section"],
+section[class*="-hero-section"],
+.aboutus-hero,
+.contact-banner,
+.hero {
+  overflow: hidden;
+}
+
+/* =========================
+   Mobile text justification
+   (Courses listing + course detail pages)
+   ========================= */
+@media (max-width: 768px) {
+  /* Course detail pages like .bba-standard-page, .ba-standard-page, etc. */
+  [class$="-standard-page"] [class$="-about-card-description"] {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+    hyphens: auto;
+  }
+}
+
+/* Let pill/tag rows wrap on small screens */
+[class*="meta-tags"] {
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+}
+
+.App::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 100px,
+      rgba(6, 183, 149, 0.02) 100px,
+      rgba(6, 183, 149, 0.02) 102px
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Global Icon Clarity Enhancement */
+img,
+svg {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Icon-specific clarity improvements */
+[class*="icon"],
+[class*="Icon"],
+[class*="meta-tag"],
+[class*="about-icon"],
+[class*="checkmark"],
+[class*="tick"] {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+[class*="icon"] img,
+[class*="Icon"] img,
+[class*="icon"] svg,
+[class*="Icon"] svg,
+[class*="meta-tag"] img,
+[class*="about-icon"] img,
+[class*="checkmark"] img,
+[class*="tick"] img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  filter: contrast(1.15) brightness(1.05);
+}
+
+/* Specific icon class improvements */
+.meta-tag-icon,
+[class*="-about-icon"] {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  filter: contrast(1.15) brightness(1.05);
+}
+
+/* Education "About" icon (replaces Overlay (26) with book-open + light badge bg) */
+body img.education-about-icon {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: rgba(6, 183, 149, 0.14);
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%)
+    hue-rotate(142deg) brightness(96%) contrast(101%);
+}
+
+/* Education "Eligibility" icon (replaces Overlay (27) with users-round + light circle bg) */
+body img.education-eligibility-icon {
+  width: 44px;
+  height: 44px;
+  padding: 11px;
+  box-sizing: border-box;
+  border-radius: 9999px;
+  background-color: rgba(6, 183, 149, 0.14);
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%)
+    hue-rotate(142deg) brightness(96%) contrast(101%);
+}
+
+/* Education "Career" icon (replaces Overlay (28) with trending-up + light rounded badge bg) */
+body img.education-career-icon {
+  width: 44px;
+  height: 44px;
+  padding: 11px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  background-color: rgba(6, 183, 149, 0.14);
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%)
+    hue-rotate(142deg) brightness(96%) contrast(101%);
+}
+
+@media (max-width: 768px) {
+  body img.education-about-icon {
+    width: 34px;
+    height: 34px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  body img.education-eligibility-icon {
+    width: 38px;
+    height: 38px;
+    padding: 9px;
+  }
+
+  body img.education-career-icon {
+    width: 38px;
+    height: 38px;
+    padding: 9px;
+    border-radius: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  body img.education-about-icon {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 9px;
+  }
+
+  body img.education-eligibility-icon {
+    width: 34px;
+    height: 34px;
+    padding: 8px;
+  }
+
+  body img.education-career-icon {
+    width: 34px;
+    height: 34px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+}
+

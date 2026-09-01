@@ -1,0 +1,93 @@
+@import './DistanceEducation.css';
+
+.service-info-box {
+  background-color: #ffffff;
+  border-left: 4px solid #06b795;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.service-info-box h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f242e;
+  margin: 0 0 1.5rem 0;
+}
+
+.service-info-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-info-box li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #526d7a;
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.8;
+}
+
+.service-info-box li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #06b795;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .service-info-box {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .service-info-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .service-info-box li {
+    font-size: 0.95rem;
+    padding: 0.625rem 0;
+    padding-left: 1.25rem;
+    line-height: 1.7;
+  }
+
+  .service-info-box li::before {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-info-box {
+    padding: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .service-info-box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-info-box li {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    line-height: 1.6;
+  }
+
+  .service-info-box li::before {
+    font-size: 1.1rem;
+  }
+}
+
+
+

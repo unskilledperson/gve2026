@@ -1,0 +1,926 @@
+.mcom-standard-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #006772;
+}
+
+/* Hero Section */
+.mcom-hero-section {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #006772;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+.mcom-hero-oval {
+  position: absolute;
+  width: 1450px;
+  height: 500px;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fbf2e7;
+  border-radius: 50%;
+}
+
+/* Main Content */
+.mcom-main-content {
+  position: relative;
+  z-index: 10;
+  margin-top: -200px;
+}
+
+/* Top buttons */
+.mcom-top-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.mcom-back-link-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3d858f;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+}
+
+.mcom-program-tag-center {
+  background-color: rgba(0, 99, 112, 0.1);
+  color: #00444d;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* Centered section */
+.mcom-centered-section {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mcom-main-title {
+  font-size: 2.125rem;
+  font-weight: 700;
+  color: #00444d;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Meta tags for duration and level */
+.mcom-meta-tags {
+  display: flex;
+  gap: 1rem;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.mcom-meta-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #00444d;
+  font-weight: 500;
+}
+
+/* Bottom Section */
+.mcom-bottom-section {
+  background-color: #006772;
+  padding: 4rem 0;
+  border-radius: 50px 50px 0 0;
+}
+
+.mcom-bottom-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
+/* Columns */
+.mcom-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mcom-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* About Program */
+.mcom-about-program-card {
+  width: 850px;
+  height: auto;
+  background-color: #fdf8f2;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.1rem 2rem;
+}
+
+.mcom-about-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.mcom-about-card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #00444d;
+}
+
+.mcom-about-card-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #3d858f;
+}
+
+/* Info Cards (Career + Eligibility) */
+.mcom-info-card {
+  background-color: #fdf8f2;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Career width */
+.mcom-left-column .mcom-info-card {
+  width: 850px;
+}
+
+/* Eligibility adjustments */
+.mcom-right-column .mcom-info-card {
+  width: 420px;
+  padding: 1.2rem;
+}
+
+/* Education grid */
+.mcom-bottom-container .education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  row-gap: 16px;
+}
+
+/* Education boxes */
+.mcom-bottom-container .higher-education-box {
+  width: 100%;
+  height: 50px;
+  background-color: #fdf8f2;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #00444d;
+}
+
+/* Last item spans full width below */
+.mcom-bottom-container .higher-education-box:nth-child(5) {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.plain-icon {
+  width: 20px;
+  height: 20px;
+  background: none;
+  padding: 0;
+  filter: contrast(1.2) brightness(1.1);
+}
+
+/* Buttons */
+.mcom-card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.mcom-btn-apply {
+  background-color: #006772;
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mcom-btn-info {
+  background-color: #fdf8f2;
+  color: #006772;
+  border: 1px solid #006772;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+}
+
+/* Quick Facts Section */
+.mcom-quick-facts {
+  background-color: #fdf8f2;
+  border-radius: 16px;
+  padding: 0.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 420px;
+}
+
+.quick-facts-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  color: #00444d;
+  margin-bottom: 0.75rem;
+}
+
+.quick-facts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.quick-fact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+}
+
+.quick-fact-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #3d858f;
+  font-weight: 600;
+}
+
+.quick-fact-value {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #00444d;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .mcom-bottom-container {
+    grid-template-columns: 1fr;
+  }
+
+  .mcom-about-program-card,
+  .mcom-left-column .mcom-info-card,
+  .mcom-right-column .mcom-info-card,
+  .mcom-quick-facts {
+    width: 100%;
+  }
+
+  .mcom-bottom-container .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mcom-bottom-container .higher-education-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mcom-hero-section {
+    height: 450px;
+    margin-top: -60px;
+  }
+
+  .mcom-hero-oval {
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    top: -80px;
+  }
+
+  .mcom-main-content {
+    margin-top: -150px;
+  }
+
+  .mcom-centered-section {
+    top: 100px;
+    padding: 0 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mcom-top-buttons {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .mcom-back-link-top {
+    font-size: 12px;
+    left: 0;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  .mcom-program-tag-center {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .mcom-main-title {
+    font-size: 1.75rem;
+    margin-top: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .mcom-title-line {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .mcom-meta-tags {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 12px;
+    justify-content: center;
+  }
+
+  .mcom-meta-tag {
+    font-size: 12px;
+    padding: 5px 14px;
+  }
+
+  .mcom-bottom-section {
+    padding: 3rem 0;
+    border-radius: 40px 40px 0 0;
+  }
+
+  .mcom-bottom-container {
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .mcom-left-column,
+  .mcom-right-column {
+    gap: 1.5rem;
+  }
+
+  .mcom-about-program-card,
+  .mcom-info-card,
+  .mcom-quick-facts {
+    padding: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mcom-about-card-header {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .mcom-about-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .mcom-about-card-title {
+    font-size: 18px;
+  }
+
+  .mcom-card-title {
+    font-size: 1.25rem;
+  }
+
+  .mcom-card-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .mcom-bottom-container .education-grid {
+    gap: 12px;
+    grid-template-columns: 1fr;
+  }
+
+  .mcom-bottom-container .higher-education-box {
+    height: auto;
+    min-height: 45px;
+    padding: 12px;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .plain-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .mcom-card-buttons {
+    gap: 0.875rem;
+  }
+
+  .mcom-btn-apply,
+  .mcom-btn-info {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    font-size: 14px;
+  }
+
+  .mcom-quick-facts {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .mcom-hero-section {
+    height: 380px;
+    margin-top: -50px;
+  }
+
+  .mcom-hero-oval {
+    height: 320px;
+    top: -60px;
+  }
+
+  .mcom-main-content {
+    margin-top: -120px;
+  }
+
+  .mcom-centered-section {
+    top: 80px;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mcom-top-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .mcom-back-link-top {
+    font-size: 11px;
+    left: 0;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  .mcom-program-tag-center {
+    font-size: 10px;
+    padding: 4px 10px;
+    align-self: flex-start;
+  }
+
+  .mcom-main-title {
+    font-size: 1.5rem;
+    margin-top: 12px;
+    gap: 0.25rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .mcom-title-line {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .mcom-meta-tags {
+    gap: 0.5rem;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .mcom-meta-tag {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+
+  .mcom-bottom-section {
+    padding: 2.5rem 0;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .mcom-bottom-container {
+    padding: 0 1rem;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+  }
+
+  .mcom-left-column,
+  .mcom-right-column {
+    gap: 1.25rem;
+  }
+
+  .mcom-about-program-card,
+  .mcom-info-card,
+  .mcom-quick-facts {
+    padding: 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .mcom-about-card-header {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .mcom-about-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .mcom-about-card-title {
+    font-size: 16px;
+  }
+
+  .mcom-card-title {
+    font-size: 1.1rem;
+  }
+
+  .mcom-card-description {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .mcom-bottom-container .education-grid {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .mcom-bottom-container .higher-education-box {
+    height: auto;
+    min-height: 40px;
+    padding: 10px;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .plain-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .mcom-btn-apply,
+  .mcom-btn-info {
+    padding: 12px 24px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .mcom-card-buttons {
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+
+  .mcom-quick-facts {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .quick-facts-title {
+    font-size: 13px;
+    margin-bottom: 0.625rem;
+  }
+
+  .quick-fact-label {
+    font-size: 13px;
+  }
+
+  .quick-fact-value {
+    font-size: 14px;
+  }
+}
+
+/* ================================
+   mcom PAGE – ANIMATION ADD-ONS
+   (SAFE | AUTO | CONSISTENT)
+================================ */
+
+/* Page fade-in */
+.mcom-standard-page {
+  animation: mcomPageFade 0.8s ease-out forwards;
+}
+
+/* Hero oval breathing */
+.mcom-hero-oval {
+  animation: mcomOvalBreath 7s ease-in-out infinite;
+}
+
+/* Title gentle reveal */
+.mcom-main-title {
+  animation: mcomTitleFade 1s ease forwards;
+}
+
+/* Cards reveal */
+.mcom-about-program-card,
+.mcom-info-card,
+.mcom-quick-facts {
+  opacity: 0;
+  animation: mcomCardReveal 0.9s ease forwards;
+}
+
+/* Career boxes stagger */
+.mcom-bottom-container .higher-education-box {
+  opacity: 0;
+  animation: mcomBoxFade 0.6s ease forwards;
+}
+
+.mcom-bottom-container .higher-education-box:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.mcom-bottom-container .higher-education-box:nth-child(2) {
+  animation-delay: 0.35s;
+}
+.mcom-bottom-container .higher-education-box:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.mcom-bottom-container .higher-education-box:nth-child(4) {
+  animation-delay: 0.65s;
+}
+.mcom-bottom-container .higher-education-box:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+/* Primary CTA soft pulse */
+.mcom-btn-apply {
+  animation: mcomButtonPulse 5s ease-in-out infinite;
+}
+
+/* ================================
+   KEYFRAMES
+================================ */
+
+@keyframes mcomPageFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mcomOvalBreath {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.02);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+@keyframes mcomTitleFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mcomCardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mcomBoxFade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes mcomButtonPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.92;
+  }
+}
+
+/* ============================================
+   SCROLL-TRIGGERED ANIMATIONS
+   ============================================ */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Slide In from Left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+/* Slide In from Right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Fade In Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Fade In Scale */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 1s ease-out forwards;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse Subtle Animation */
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 2s ease-in-out infinite;
+}
+
+/* Pulse Icon Animation */
+@keyframes pulseIcon {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(6, 183, 149, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(6, 183, 149, 0);
+  }
+}
+
+.animate-pulse-icon {
+  animation: pulseIcon 2s ease-in-out infinite;
+}
+
+/* Bounce Subtle Animation */
+@keyframes bounceSubtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounceSubtle 2.5s ease-in-out infinite;
+}
+
+/* Pulse Button Animation */
+@keyframes pulseButton {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+  }
+}
+
+.animate-pulse-button {
+  animation: pulseButton 2s ease-in-out infinite;
+}
+
+/* Initial state for scroll-triggered elements */
+.mcom-left-column,
+.mcom-right-column,
+.mcom-top-buttons,
+.mcom-title-section,
+.mcom-meta-tags {
+  opacity: 0;
+}
+
+/* When animation class is added, element becomes visible */
+.mcom-left-column.animate-slide-in-left,
+.mcom-right-column.animate-slide-in-right,
+.mcom-top-buttons.animate-fade-in,
+.mcom-title-section.animate-fade-in-scale,
+.mcom-meta-tags.animate-fade-in-up {
+  opacity: 1;
+}
+

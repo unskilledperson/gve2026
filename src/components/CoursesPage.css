@@ -1,0 +1,1543 @@
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.courses-page {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fbf2e7;
+}
+
+/* Hero Section */
+.courses-hero {
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 103, 114, 0.85) 0%,
+    rgba(0, 103, 114, 0.75) 40%,
+    rgba(251, 242, 231, 0.85) 100%
+  ),
+  var(--bg-image);
+  background-size: cover, cover;
+  /* Keep gradient centered; position the image slightly lower than center */
+  background-position: center, center 35%;
+  background-repeat: no-repeat, no-repeat;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dark gradient in left upper corner */
+.courses-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 103, 114, 0.6) 0%,
+    rgba(0, 103, 114, 0.3) 40%,
+    transparent 70%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.courses-hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  min-height: 600px;
+}
+
+/* Left Content */
+.courses-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  z-index: 2;
+  animation: fadeInLeft 0.8s ease-out;
+}
+
+.courses-hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.title-line {
+  display: block;
+}
+
+.courses-hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.courses-btn-primary {
+  background-color: #fbf2e7;
+  color: #006772;
+  border: 2px solid #006772;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.courses-btn-primary:hover {
+  background-color: #006772;
+  color: #ffffff;
+}
+
+.courses-btn-secondary {
+  background-color: transparent;
+  color: #fbf2e7;
+  border: 2px solid #fbf2e7;
+  border-radius: 8px;
+  padding: 14px 32px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.courses-btn-secondary:hover {
+  background-color: #fbf2e7;
+  color: #006772;
+}
+
+/* Right Image */
+.courses-hero-image-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  animation: fadeInRight 0.8s ease-out 0.3s both;
+}
+
+.courses-hero-image {
+  /* Slightly enlarge the hero image visually (some PNGs have built-in padding) */
+  width: 110%;
+  max-width: none;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  /* move a bit more to the right (avoid transform so it doesn't conflict with float animation) */
+  left: 40px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Info Boxes */
+.floating-info-box {
+  position: absolute;
+  background-color: #fbf2e7;
+  border: 1px solid #006772;
+  border-radius: 16px;
+  width: 189px;
+  height: 72px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  opacity: 1;
+  box-sizing: border-box;
+  animation: scaleIn 0.6s ease-out 0.8s both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.floating-info-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.floating-box-1 {
+  top: 55px;
+  right: 20px;
+  animation-delay: 0.8s;
+  width: 160px;
+  height: 60px;
+  padding: 10px 12px;
+}
+
+.floating-box-2 {
+  bottom: -20px;
+  left: 100px;
+  animation-delay: 1s;
+}
+
+.info-icon-box {
+  width: 35px;
+  height: 35px;
+  min-width: 35px;
+  background-color: rgba(6, 183, 149, 0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.info-icon-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #006772;
+}
+
+.info-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #006772;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-checkmark {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) saturate(100%) invert(25%) sepia(67%) saturate(1234%)
+    hue-rotate(152deg) brightness(95%) contrast(101%);
+}
+
+/* Courses Section - Top part with cream background */
+.courses-section-top {
+  background-color: #fbf2e7;
+  padding: 2rem 2rem 1rem 2rem;
+}
+
+/* Courses Section - Bottom part with mixed cream/green gradient */
+.courses-section {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 103, 114, 1) 0%,
+    rgba(251, 242, 231, 0.7176) 50%,
+    rgba(0, 103, 114, 1) 100%
+  );
+  padding: 2rem 2rem 4rem 2rem;
+  position: relative;
+}
+
+.courses-section-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.courses-section-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 0.75rem 0;
+  text-align: center;
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.heading-line {
+  display: block;
+}
+
+.courses-section-heading .highlight-teal {
+  color: #006772;
+}
+
+.courses-section-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #4b5563;
+  line-height: 1.6;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Program Sections */
+.program-section {
+  margin-bottom: 4rem;
+}
+
+.program-section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.75rem 0;
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Override for Undergraduate Programs title */
+#bachelors {
+  scroll-margin-top: 100px;
+}
+
+#masters {
+  scroll-margin-top: 100px;
+}
+
+.undergraduate-programs-section .program-section-title {
+  color: #00444d;
+}
+
+.program-section-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 2rem 0;
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/* Override for Undergraduate Programs subtitle to match Secondary Education */
+.undergraduate-programs-section .program-section-subtitle {
+  color: #fbf2e7;
+}
+
+/* Secondary Education Container and Cards */
+.secondary-education-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.secondary-education-container .program-section-title {
+  color: #fbf2e7;
+  margin: 0 0 0.75rem 0;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.secondary-education-container .program-section-subtitle {
+  color: #fbf2e7;
+  margin: 0 0 2rem 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.secondary-education-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  justify-items: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+.secondary-education-card {
+  width: 290px;
+  height: 260px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #ffffff 0%, #fbf2e7 100%);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 1;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.secondary-education-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.secondary-education-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.secondary-education-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.secondary-card-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #06b795;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.secondary-card-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.secondary-education-card::after {
+  content: "";
+  position: absolute;
+  bottom: 48px;
+  left: 18px;
+  right: 18px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.secondary-card-icon {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.secondary-card-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: none;
+}
+
+.secondary-card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  text-align: left;
+}
+
+.secondary-card-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.secondary-card-read-more {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #08b584;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: auto;
+  position: relative;
+  z-index: 1;
+  color: #06b795;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  align-self: flex-start;
+}
+
+.secondary-card-read-more:hover {
+  color: #00444d;
+}
+
+/* Program Cards Grid */
+.program-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 3rem;
+}
+
+.program-cards-grid-large {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Undergraduate Programs Cards */
+.undergraduate-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.undergraduate-card {
+  width: 290px;
+  height: 260px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #ffffff 0%, #fbf2e7 100%);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 1;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.undergraduate-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.undergraduate-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.undergraduate-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.undergraduate-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.undergraduate-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.undergraduate-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.undergraduate-card-icon {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.undergraduate-card-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: none;
+}
+
+.undergraduate-card::after {
+  content: "";
+  position: absolute;
+  bottom: 52px;
+  left: 18px;
+  right: 18px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.undergraduate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.undergraduate-card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  text-align: left;
+}
+
+.undergraduate-card-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.undergraduate-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  border-top: none;
+  margin-top: auto;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  gap: 12px;
+}
+
+.undergraduate-duration {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  background-color: #f3f4f6;
+  padding: 4px 12px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.undergraduate-read-more {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #08b584;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.undergraduate-read-more:hover {
+  color: #06b795;
+}
+
+/* Postgraduate Programs Cards */
+.postgraduate-cards-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.postgraduate-cards-row {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.postgraduate-cards-row-first {
+  justify-content: center;
+}
+
+.postgraduate-cards-row-second {
+  justify-content: center;
+}
+
+.postgraduate-card {
+  width: 290px;
+  height: 260px;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #ffffff 0%, #fbf2e7 100%);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 1;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.postgraduate-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.postgraduate-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.postgraduate-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.postgraduate-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.postgraduate-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.postgraduate-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.postgraduate-card:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.postgraduate-card-icon {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.postgraduate-card-icon img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: none;
+}
+
+.postgraduate-card::after {
+  content: "";
+  position: absolute;
+  bottom: 52px;
+  left: 18px;
+  right: 18px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.postgraduate-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.postgraduate-card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+  text-align: left;
+}
+
+.postgraduate-card-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+  text-align: left;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.postgraduate-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  border-top: none;
+  margin-top: auto;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  gap: 12px;
+}
+
+.postgraduate-duration {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  background-color: #f3f4f6;
+  padding: 4px 12px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.postgraduate-read-more {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #08b584;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.postgraduate-read-more:hover {
+  color: #06b795;
+}
+
+/* Override for Postgraduate Programs subtitle */
+.postgraduate-programs-section .program-section-subtitle {
+  color: #fbf2e7;
+}
+
+/* Override for Postgraduate Programs title */
+.postgraduate-programs-section .program-section-title {
+  color: #00444d;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .courses-hero-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    min-height: auto;
+  }
+
+  .courses-hero-title {
+    font-size: 2.5rem;
+  }
+
+  /* Keep the hero image enlargement a bit more subtle on tablet widths */
+  .courses-hero-image {
+    width: 105%;
+    left: 0;
+  }
+
+  .floating-box-1 {
+    top: 50px;
+  }
+
+  .undergraduate-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .postgraduate-cards-row {
+    flex-wrap: wrap;
+  }
+
+  .program-cards-grid-large {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile: justify longer text blocks for readability */
+  .courses-section-description,
+  .program-section-subtitle,
+  .secondary-card-description,
+  .undergraduate-card-description,
+  .postgraduate-card-description {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+    hyphens: auto;
+  }
+
+  .courses-hero {
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+
+  .courses-hero::before {
+    width: 250px;
+    height: 250px;
+  }
+
+  .courses-hero-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    min-height: auto;
+    padding: 0;
+  }
+
+  .courses-hero-content {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .courses-hero-title {
+    font-size: 1.75rem;
+    line-height: 1.3;
+  }
+
+  .title-line {
+    font-size: 1.75rem;
+  }
+
+  .courses-hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .courses-btn-primary,
+  .courses-btn-secondary {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .courses-hero-image-wrapper {
+    width: 100%;
+    max-width: 100%;
+    order: -1;
+  }
+
+  .courses-hero-image {
+    max-width: 100%;
+    width: 100%;
+    left: 0;
+  }
+
+  .floating-info-box {
+    display: none;
+  }
+
+  .courses-section-top {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  .courses-section {
+    padding: 2rem 1rem 3rem 1rem;
+  }
+
+  .courses-section-heading {
+    font-size: 1.75rem;
+    gap: 0.5rem;
+  }
+
+  .courses-section-description {
+    font-size: 16px;
+    padding: 0 1rem;
+  }
+
+  .program-section {
+    margin-bottom: 3rem;
+  }
+
+  .program-section-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .program-section-subtitle {
+    font-size: 14px;
+    margin-bottom: 1.5rem;
+  }
+
+  .secondary-education-container {
+    padding: 1rem;
+  }
+
+  .secondary-education-container .program-section-title {
+    font-size: 1.5rem;
+  }
+
+  .secondary-education-container .program-section-subtitle {
+    font-size: 13px;
+  }
+
+  .secondary-education-cards-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+
+  .secondary-education-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 240px;
+  }
+
+  .undergraduate-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 100%;
+  }
+
+  .undergraduate-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 240px;
+  }
+
+  .postgraduate-cards-container {
+    gap: 1.5rem;
+  }
+
+  .postgraduate-cards-row {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .postgraduate-cards-row-second {
+    padding-left: 0;
+  }
+
+  .postgraduate-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 240px;
+  }
+
+  .program-cards-grid,
+  .program-cards-grid-large {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .secondary-card-title,
+  .undergraduate-card-title,
+  .postgraduate-card-title {
+    font-size: 18px;
+  }
+
+  .secondary-card-description,
+  .undergraduate-card-description,
+  .postgraduate-card-description {
+    font-size: 13px;
+  }
+
+  .undergraduate-card-footer,
+  .postgraduate-card-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .undergraduate-read-more,
+  .postgraduate-read-more {
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .undergraduate-duration,
+  .postgraduate-duration {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-hero {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .courses-hero::before {
+    width: 200px;
+    height: 200px;
+  }
+
+  .courses-hero-container {
+    gap: 1.5rem;
+  }
+
+  .courses-hero-content {
+    gap: 1rem;
+  }
+
+  .courses-hero-title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .title-line {
+    font-size: 1.5rem;
+  }
+
+  .courses-hero-buttons {
+    gap: 0.75rem;
+  }
+
+  .courses-btn-primary,
+  .courses-btn-secondary {
+    font-size: 13px;
+    padding: 10px 20px;
+    max-width: 100%;
+  }
+
+  .courses-section-top {
+    padding: 1.5rem 0.75rem 0.75rem 0.75rem;
+  }
+
+  .courses-section {
+    padding: 1.5rem 0.75rem 2rem 0.75rem;
+  }
+
+  .courses-section-heading {
+    font-size: 1.5rem;
+    gap: 0.25rem;
+  }
+
+  .courses-section-description {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .program-section {
+    margin-bottom: 2.5rem;
+  }
+
+  .program-section-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .program-section-subtitle {
+    font-size: 13px;
+    margin-bottom: 1.25rem;
+  }
+
+  .secondary-education-container {
+    padding: 0.75rem;
+  }
+
+  .secondary-education-container .program-section-title {
+    font-size: 1.25rem;
+  }
+
+  .secondary-education-container .program-section-subtitle {
+    font-size: 12px;
+  }
+
+  .secondary-education-cards-wrapper {
+    gap: 1.25rem;
+  }
+
+  .secondary-education-card {
+    padding: 14px;
+    min-height: 220px;
+    gap: 10px;
+  }
+
+  .secondary-card-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .secondary-card-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .secondary-card-title {
+    font-size: 16px;
+  }
+
+  .secondary-card-description {
+    font-size: 12px;
+  }
+
+  .secondary-card-read-more {
+    font-size: 12px;
+  }
+
+  .undergraduate-cards-grid {
+    gap: 1.25rem;
+  }
+
+  .undergraduate-card {
+    padding: 14px;
+    min-height: 220px;
+    gap: 10px;
+  }
+
+  .undergraduate-card-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .undergraduate-card-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .undergraduate-card-title {
+    font-size: 16px;
+  }
+
+  .undergraduate-card-description {
+    font-size: 12px;
+  }
+
+  .undergraduate-card-footer,
+  .postgraduate-card-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+
+  .undergraduate-duration,
+  .postgraduate-duration {
+    font-size: 12px;
+    padding: 3px 10px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .undergraduate-read-more,
+  .postgraduate-read-more {
+    font-size: 12px;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .postgraduate-cards-container {
+    gap: 1.25rem;
+  }
+
+  .postgraduate-cards-row {
+    gap: 1.25rem;
+  }
+
+  .postgraduate-card {
+    padding: 14px;
+    min-height: 220px;
+    gap: 10px;
+  }
+
+  .postgraduate-card-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .postgraduate-card-icon img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .postgraduate-card-title {
+    font-size: 16px;
+  }
+
+  .postgraduate-card-description {
+    font-size: 12px;
+  }
+}
+
+/* ============================================
+   SCROLL-TRIGGERED ANIMATIONS
+   ============================================ */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Slide In from Left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+/* Slide In from Right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Fade In Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Fade In Scale */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 1s ease-out forwards;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse Subtle Animation */
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 2s ease-in-out infinite;
+}
+
+/* Pulse Icon Animation */
+@keyframes pulseIcon {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(6, 183, 149, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(6, 183, 149, 0);
+  }
+}
+
+.animate-pulse-icon {
+  animation: pulseIcon 2s ease-in-out infinite;
+}
+
+/* Bounce Subtle Animation */
+@keyframes bounceSubtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounceSubtle 2.5s ease-in-out infinite;
+}
+
+/* Pulse Button Animation */
+@keyframes pulseButton {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+  }
+}
+
+.animate-pulse-button {
+  animation: pulseButton 2s ease-in-out infinite;
+}
+
+/* Initial state for scroll-triggered elements */
+.courses-hero-content,
+.courses-hero-image-wrapper,
+.courses-section-heading {
+  opacity: 0;
+}
+
+/* When animation class is added, element becomes visible */
+.courses-hero-content.animate-slide-in-left,
+.courses-hero-image-wrapper.animate-slide-in-right,
+.courses-section-heading.animate-fade-in-scale {
+  opacity: 1;
+}

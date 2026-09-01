@@ -1,0 +1,666 @@
+.service-detail-page {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.service-hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: 85%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fbf2e7;
+  animation: heroFadeIn 1s ease-in-out;
+}
+
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes heroImageZoom {
+  0%, 100% {
+    background-size: 105%;
+  }
+  50% {
+    background-size: 110%;
+  }
+}
+
+.service-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 103, 114, 0.75);
+  z-index: 1;
+}
+
+.service-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+}
+
+.service-hero-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fbf2e7;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.service-hero-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fbf2e7;
+  margin: 0;
+  max-width: 700px;
+}
+
+.service-content-section {
+  background-color: #fbf2e7;
+  padding: 4rem 2rem;
+}
+
+.service-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-intro {
+  margin-bottom: 4rem;
+}
+
+.service-intro h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f242e;
+  margin: 0 0 1.5rem 0;
+}
+
+.service-intro p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #526d7a;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.service-benefits {
+  margin-bottom: 4rem;
+}
+
+.service-benefits h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f242e;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.benefit-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.benefit-icon svg {
+  shape-rendering: geometricPrecision;
+}
+
+.benefit-card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f242e;
+  margin: 0 0 1rem 0;
+}
+
+.benefit-card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #526d7a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.service-programs {
+  margin-bottom: 4rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 3rem;
+}
+
+.service-programs h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f242e;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.programs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.program-item h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #006772;
+  margin: 0 0 1.5rem 0;
+}
+
+.program-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.program-item li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #526d7a;
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.program-item li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #06b795;
+  font-weight: bold;
+}
+
+.service-process {
+  margin-bottom: 4rem;
+}
+
+.service-process h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f242e;
+  margin: 0 0 3rem 0;
+  text-align: center;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.step-item {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #006772 0%, #06b795 100%);
+  color: #ffffff;
+  border-radius: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.step-item h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f242e;
+  margin: 0 0 1rem 0;
+}
+
+.step-item p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #526d7a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.service-cta {
+  background: linear-gradient(135deg, #006772 0%, #06b795 100%);
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.service-cta h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+}
+
+.service-cta p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 2rem 0;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #006772;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  /* Mobile: justify longer content text */
+  .service-intro p,
+  .benefit-card p,
+  .step-item p {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+    hyphens: auto;
+  }
+
+  .service-hero {
+    height: 300px;
+  }
+
+  .service-hero-title {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+  }
+
+  .service-hero-subtitle {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+
+  .service-content-section {
+    padding: 2rem 1rem;
+  }
+
+  .service-container {
+    padding: 0;
+  }
+
+  .service-intro {
+    margin-bottom: 3rem;
+  }
+
+  .service-intro h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .service-intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .service-benefits {
+    margin-bottom: 3rem;
+  }
+
+  .service-benefits h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .benefits-grid,
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .benefit-card {
+    padding: 1.5rem;
+  }
+
+  .benefit-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .service-programs {
+    padding: 2rem 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .service-programs h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .programs-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .program-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .program-item li {
+    font-size: 0.95rem;
+    padding: 0.625rem 0;
+    padding-left: 1.25rem;
+    line-height: 1.6;
+  }
+
+  .service-process {
+    margin-bottom: 3rem;
+  }
+
+  .service-process h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .step-item {
+    padding: 1.5rem;
+  }
+
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1.25rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .step-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .step-item p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .service-cta {
+    padding: 2rem 1.5rem;
+  }
+
+  .service-cta h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .service-cta p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-button {
+    font-size: 0.95rem;
+    padding: 0.875rem 2rem;
+  }
+
+  .service-info-box {
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .service-info-box h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .service-info-box li {
+    font-size: 0.95rem;
+    padding: 0.625rem 0;
+    padding-left: 1.25rem;
+    line-height: 1.7;
+  }
+
+  .service-info-box li::before {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-hero {
+    height: 250px;
+  }
+
+  .service-hero-title {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .service-hero-subtitle {
+    font-size: 0.85rem;
+    max-width: 95%;
+    padding: 0 0.5rem;
+  }
+
+  .service-content-section {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .service-container {
+    padding: 0;
+  }
+
+  .service-intro {
+    margin-bottom: 2.5rem;
+  }
+
+  .service-intro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-intro p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .service-benefits {
+    margin-bottom: 2.5rem;
+  }
+
+  .service-benefits h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .benefits-grid,
+  .process-steps {
+    gap: 1.25rem;
+  }
+
+  .benefit-card {
+    padding: 1.25rem;
+  }
+
+  .benefit-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .benefit-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .service-programs {
+    padding: 1.5rem 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .service-programs h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .programs-list {
+    gap: 1.25rem;
+  }
+
+  .program-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .program-item li {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    line-height: 1.5;
+  }
+
+  .service-process {
+    margin-bottom: 2.5rem;
+  }
+
+  .service-process h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .step-item {
+    padding: 1.25rem;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .step-item h3 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .step-item p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .service-cta {
+    padding: 1.5rem 1rem;
+  }
+
+  .service-cta h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .service-cta p {
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.75rem 1.75rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .service-info-box {
+    padding: 1.25rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .service-info-box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-info-box li {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+    line-height: 1.6;
+  }
+
+  .service-info-box li::before {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,479 @@
+.services-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Upper Section - Deep Teal Background */
+.services-upper {
+  position: relative;
+  background-color: #006772;
+  padding: 0 0 3rem 0;
+  display: block;
+  overflow: hidden;
+}
+
+.services-upper-content {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #fbf2e7;
+  border-radius: 0 0 50% 50%;
+  padding: 2.25rem 2rem 3.25rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.services-upper-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.services-label {
+  display: inline-block;
+  background-color: #d9f2ee;
+  color: #06b795;
+  padding: 0.45rem 1.35rem;
+  border-radius: 50px;
+  font-size: 0.775rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.3px;
+}
+
+.services-heading {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin: 0 0 0.875rem 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.services-description {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.65;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services-curve {
+  display: none;
+}
+
+/* Lower Section - Dark Teal Background */
+.services-lower {
+  background-color: #006772;
+  padding: 5rem 2rem 3rem;
+  margin-top: -60px;
+  position: relative;
+  z-index: 1;
+}
+
+.services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.application-process-heading {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #fbf2e7;
+  text-align: center;
+  margin: 0 0 2.5rem 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+/* Application Process Grid - Home Page Only */
+.application-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 52px;
+}
+
+.application-process-card {
+  background-color: #fbf2e7;
+  width: 280px;
+  height: 200px;
+  border-radius: 24px;
+  border: none;
+  padding: 1.5rem 1.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  overflow: visible;
+  text-decoration: none;
+  color: inherit;
+}
+
+.application-process-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.application-process-card:hover .application-process-icon-wrapper {
+  transform: scale(1.05);
+}
+
+.application-process-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  background-color: #006772;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.application-process-icon-svg {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.application-process-icon-svg path {
+  fill: white;
+}
+
+.application-process-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f1729;
+  margin: 1rem 0 0 0;
+  transition: color 0.3s ease;
+  line-height: 1.4;
+  text-align: center;
+  width: 100%;
+}
+
+.application-process-card:hover .application-process-title {
+  color: #0f1729;
+}
+
+.application-process-description {
+  font-size: 0.9rem;
+  color: #5c6a8a;
+  margin: 0;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.application-process-card:hover .application-process-description {
+  color: #5c6a8a;
+}
+
+@media (max-width: 1024px) {
+  .services-heading {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  .application-process-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+  }
+
+  .services-upper-content {
+    padding: 2rem 1.5rem 3rem;
+    border-radius: 0 0 50% 50%;
+  }
+
+  .services-upper-inner {
+    padding: 0 0.75rem;
+  }
+
+  .services-label {
+    font-size: 0.7rem;
+    padding: 0.4rem 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .application-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .services-upper {
+    padding: 0;
+  }
+
+  .services-lower {
+    padding: 4.5rem 1.5rem 2.5rem;
+    margin-top: -60px;
+  }
+
+  .application-process-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 180px;
+    padding: 1.5rem 1.25rem;
+    box-sizing: border-box;
+  }
+
+  .application-process-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+
+  .application-process-icon-svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .application-process-title {
+    font-size: 1rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+  }
+
+  .application-process-description {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-heading {
+    font-size: 1.75rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .application-process-heading {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    line-height: 1.3;
+  }
+
+  .services-description {
+    font-size: 0.9rem;
+  }
+
+  .services-upper {
+    padding: 0;
+  }
+
+  .services-upper-content {
+    padding: 3rem 1.5rem 3.5rem;
+    border-radius: 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .services-upper-inner {
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .services-label {
+    font-size: 0.8rem;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+  }
+  
+  .services-heading {
+    padding: 0;
+    margin-bottom: 1.25rem;
+    line-height: 1.3;
+    font-size: 1.75rem;
+    width: 100%;
+  }
+  
+  .services-description {
+    padding: 0;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  .application-process-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .services-upper {
+    padding: 0;
+  }
+
+  .services-lower {
+    padding: 4rem 1rem 2rem;
+    margin-top: -30px;
+  }
+
+  .application-process-card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 180px;
+    padding: 1.5rem 1.25rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .application-process-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1rem;
+  }
+
+  .application-process-icon-svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .application-process-title {
+    font-size: 1rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-heading {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .application-process-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+  }
+  
+  .services-description {
+    font-size: 0.85rem;
+  }
+  
+  .services-upper {
+    padding: 0;
+  }
+  
+  .services-upper-content {
+    padding: 2.5rem 1rem 3rem;
+    border-radius: 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .services-upper-inner {
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .services-label {
+    font-size: 0.75rem;
+    padding: 0.5rem 1.25rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+  }
+  
+  .services-heading {
+    padding: 0;
+    margin-bottom: 1.25rem;
+    line-height: 1.3;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+  
+  .services-description {
+    padding: 0;
+    line-height: 1.7;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  
+  .services-lower {
+    padding: 3.5rem 1rem 1.5rem;
+    margin-top: -20px;
+  }
+
+  .application-process-grid {
+    gap: 1.25rem;
+    padding: 0 0.5rem;
+  }
+  
+  .application-process-card {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 160px;
+    padding: 1.25rem 1rem;
+    box-sizing: border-box;
+  }
+  
+  .application-process-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.875rem;
+  }
+  
+  .application-process-icon-svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .application-process-title {
+    font-size: 0.95rem;
+    margin-top: 0.625rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .application-process-description {
+    font-size: 0.8rem;
+  }
+}
+
+/* Avoid applying global overscroll rules; they can interfere with trackpad/touch scrolling in some environments. */
+
+/* Light sweep animation removed as requested */

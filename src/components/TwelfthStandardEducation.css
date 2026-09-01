@@ -1,0 +1,846 @@
+.twelfth-standard-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #006772;
+}
+
+/* Hero Section */
+.twelfth-hero-section {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #006772;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+.twelfth-hero-oval {
+  position: absolute;
+  width: 1450px;
+  height: 500px;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fbf2e7;
+  border-radius: 50%;
+}
+
+/* Main Content */
+.twelfth-main-content {
+  position: relative;
+  z-index: 10;
+  margin-top: -200px;
+}
+
+/* Top buttons */
+.twelfth-top-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.twelfth-back-link-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3d858f;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+}
+
+.twelfth-program-tag-center {
+  background-color: rgba(0, 99, 112, 0.1);
+  color: #00444d;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* Centered section */
+.twelfth-centered-section {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.twelfth-main-title {
+  font-size: 2.125rem;
+  font-weight: 700;
+  color: #00444d;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Higher Secondary tag */
+.twelfth-secondary-tag {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 6px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.twelfth-secondary-icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* Bottom Section */
+.twelfth-bottom-section {
+  background-color: #006772;
+  padding: 4rem 0;
+  border-radius: 50px 50px 0 0;
+}
+
+.twelfth-bottom-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
+/* Columns */
+.twelfth-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.twelfth-right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* About Program */
+.twelfth-about-program-card {
+  width: 850px;
+  height: auto;
+  background-color: #fdf8f2;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.1rem 2rem;
+}
+
+.twelfth-about-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.twelfth-about-card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #00444d;
+}
+
+.twelfth-about-card-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #3d858f;
+}
+
+/* Info Cards (Career + Eligibility) */
+.twelfth-info-card {
+  background-color: #fdf8f2;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Career width */
+.twelfth-left-column .twelfth-info-card {
+  width: 850px;
+}
+
+/* Eligibility adjustments */
+.twelfth-right-column .twelfth-info-card {
+  width: 420px;
+  padding: 1.2rem;
+}
+
+/* Education grid */
+.twelfth-bottom-container .education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  row-gap: 16px;
+}
+
+/* Education boxes */
+.twelfth-bottom-container .higher-education-box {
+  width: 100%;
+  height: 50px;
+  background-color: #fdf8f2;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #00444d;
+}
+
+/* Third item below first */
+.twelfth-bottom-container .higher-education-box:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.plain-icon {
+  width: 20px;
+  height: 20px;
+  background: none;
+  padding: 0;
+  filter: contrast(1.2) brightness(1.1);
+}
+
+/* Buttons */
+.twelfth-card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.twelfth-btn-apply {
+  background-color: #006772;
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.twelfth-btn-info {
+  background-color: #fdf8f2;
+  color: #006772;
+  border: 1px solid #006772;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .twelfth-bottom-container {
+    grid-template-columns: 1fr;
+  }
+
+  .twelfth-about-program-card,
+  .twelfth-left-column .twelfth-info-card,
+  .twelfth-right-column .twelfth-info-card {
+    width: 100%;
+  }
+
+  .twelfth-bottom-container .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .twelfth-bottom-container .higher-education-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .twelfth-hero-section {
+    height: 450px;
+    margin-top: -60px;
+  }
+
+  .twelfth-hero-oval {
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    top: -80px;
+  }
+
+  .twelfth-main-content {
+    margin-top: -150px;
+  }
+
+  .twelfth-centered-section {
+    top: 100px;
+    padding: 0 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .twelfth-top-buttons {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .twelfth-back-link-top {
+    font-size: 12px;
+    left: 0;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  .twelfth-program-tag-center {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .twelfth-main-title {
+    font-size: 1.75rem;
+    margin-top: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .twelfth-title-line {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .twelfth-secondary-tag {
+    font-size: 12px;
+    padding: 5px 12px;
+    margin-top: 8px;
+  }
+
+  .twelfth-secondary-icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  .twelfth-meta-tags {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 12px;
+  }
+
+  .twelfth-meta-tag {
+    font-size: 12px;
+    padding: 5px 14px;
+  }
+
+  .twelfth-bottom-section {
+    padding: 3rem 0;
+    border-radius: 40px 40px 0 0;
+  }
+
+  .twelfth-bottom-container {
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .twelfth-left-column,
+  .twelfth-right-column {
+    gap: 1.5rem;
+  }
+
+  .twelfth-about-program-card,
+  .twelfth-info-card {
+    padding: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .twelfth-about-card-header {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .twelfth-about-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .twelfth-about-card-title {
+    font-size: 18px;
+  }
+
+  .twelfth-card-title {
+    font-size: 1.25rem;
+  }
+
+  .twelfth-card-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .twelfth-bottom-container .education-grid {
+    gap: 12px;
+    grid-template-columns: 1fr;
+  }
+
+  .twelfth-bottom-container .higher-education-box {
+    height: auto;
+    min-height: 45px;
+    padding: 12px;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .plain-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .twelfth-card-buttons {
+    gap: 0.875rem;
+  }
+
+  .twelfth-btn-apply,
+  .twelfth-btn-info {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .twelfth-hero-section {
+    height: 380px;
+    margin-top: -50px;
+  }
+
+  .twelfth-hero-oval {
+    height: 320px;
+    top: -60px;
+  }
+
+  .twelfth-main-content {
+    margin-top: -120px;
+  }
+
+  .twelfth-centered-section {
+    top: 80px;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .twelfth-top-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .twelfth-back-link-top {
+    font-size: 11px;
+    left: 0;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  .twelfth-program-tag-center {
+    font-size: 10px;
+    padding: 4px 10px;
+    align-self: flex-start;
+  }
+
+  .twelfth-main-title {
+    font-size: 1.5rem;
+    margin-top: 12px;
+    gap: 0.25rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .twelfth-title-line {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .twelfth-secondary-tag {
+    font-size: 11px;
+    padding: 4px 10px;
+    margin-top: 6px;
+  }
+
+  .twelfth-secondary-icon {
+    width: 9px;
+    height: 9px;
+  }
+
+  .twelfth-meta-tags {
+    gap: 0.5rem;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .twelfth-meta-tag {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+
+  .twelfth-bottom-section {
+    padding: 2.5rem 0;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .twelfth-bottom-container {
+    padding: 0 1rem;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+  }
+
+  .twelfth-left-column,
+  .twelfth-right-column {
+    gap: 1.25rem;
+  }
+
+  .twelfth-about-program-card,
+  .twelfth-info-card {
+    padding: 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .twelfth-about-card-header {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .twelfth-about-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .twelfth-about-card-title {
+    font-size: 16px;
+  }
+
+  .twelfth-card-title {
+    font-size: 1.1rem;
+  }
+
+  .twelfth-card-description {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .twelfth-bottom-container .education-grid {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .twelfth-bottom-container .higher-education-box {
+    height: auto;
+    min-height: 40px;
+    padding: 10px;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .plain-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .twelfth-btn-apply,
+  .twelfth-btn-info {
+    padding: 12px 24px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .twelfth-card-buttons {
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+}
+
+.twelfth-standard-page {
+  animation: twelfthPageFade 0.8s ease-out forwards;
+}
+.twelfth-hero-oval {
+  animation: twelfthOvalBreath 7s ease-in-out infinite;
+}
+.twelfth-main-title {
+  animation: twelfthTitleFade 1s ease forwards;
+}
+.twelfth-about-program-card,
+.twelfth-info-card {
+  opacity: 0;
+  animation: twelfthCardReveal 0.9s ease forwards;
+}
+.twelfth-bottom-container .higher-education-box {
+  opacity: 0;
+  animation: twelfthBoxFade 0.6s ease forwards;
+}
+
+.twelfth-bottom-container .higher-education-box:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.twelfth-bottom-container .higher-education-box:nth-child(2) {
+  animation-delay: 0.35s;
+}
+.twelfth-bottom-container .higher-education-box:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.twelfth-btn-apply {
+  animation: twelfthButtonPulse 5s ease-in-out infinite;
+}
+@keyframes twelfthPageFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes twelfthOvalBreath {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.02);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+@keyframes twelfthTitleFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes twelfthCardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes twelfthBoxFade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes twelfthButtonPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.92;
+  }
+}
+
+/* ============================================
+   SCROLL-TRIGGERED ANIMATIONS
+   ============================================ */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Slide In from Left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+/* Slide In from Right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Fade In Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Fade In Scale */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 1s ease-out forwards;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse Subtle Animation */
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 2s ease-in-out infinite;
+}
+
+/* Pulse Icon Animation */
+@keyframes pulseIcon {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(6, 183, 149, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(6, 183, 149, 0);
+  }
+}
+
+.animate-pulse-icon {
+  animation: pulseIcon 2s ease-in-out infinite;
+}
+
+/* Bounce Subtle Animation */
+@keyframes bounceSubtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounceSubtle 2.5s ease-in-out infinite;
+}
+
+/* Pulse Button Animation */
+@keyframes pulseButton {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+  }
+}
+
+.animate-pulse-button {
+  animation: pulseButton 2s ease-in-out infinite;
+}
+
+/* Initial state for scroll-triggered elements */
+.twelfth-left-column,
+.twelfth-right-column,
+.twelfth-top-buttons,
+.twelfth-title-section,
+.twelfth-secondary-tag {
+  opacity: 0;
+}
+
+/* When animation class is added, element becomes visible */
+.twelfth-left-column.animate-slide-in-left,
+.twelfth-right-column.animate-slide-in-right,
+.twelfth-top-buttons.animate-fade-in,
+.twelfth-title-section.animate-fade-in-scale,
+.twelfth-secondary-tag.animate-fade-in-up {
+  opacity: 1;
+}

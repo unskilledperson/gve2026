@@ -1,0 +1,182 @@
+@import "./DistanceEducation.css";
+
+/* FIXED: correct selector */
+.service h2 {
+  text-align: left;
+}
+
+/* ================= INFO BOX ================= */
+
+.service-info-box {
+  background-color: #ffffff;
+  border-left: 4px solid #06b795;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.service-info-box h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f242e;
+  margin: 0 0 1.5rem 0;
+}
+
+.service-info-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-info-box li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #526d7a;
+  padding: 0.7rem 0 0.7rem 1.5rem;
+  position: relative;
+  line-height: 1.7;
+}
+
+.service-info-box li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #06b795;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* ================= WHY CHOOSE CARDS ================= */
+
+.service-benefits {
+  padding: 3rem 0;
+}
+
+.service-benefits h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.benefit-card {
+  background: #ffffff;
+  padding: 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.benefit-card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f242e;
+  margin-bottom: 1rem;
+  min-height: 60px; /* keeps all headings aligned */
+  text-align: center;
+}
+
+.benefit-card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.95rem;
+  color: #526d7a;
+  line-height: 1.7;
+  text-align: left; /* FIXED: removed center/justify conflict */
+}
+
+/* ================= PROGRAMS + RECOGNITION ================= */
+
+.programs-recognition {
+  background: #f8f9fb;
+  border-radius: 20px;
+  padding: 3rem 4rem;
+  margin: 3rem 0;
+}
+
+.programs-recognition h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color: #0f242e;
+}
+
+.programs-recognition-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.programs-section h3,
+.recognition-section h3 {
+  color: #0d6b73;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.programs-section ul,
+.recognition-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.programs-section li,
+.recognition-section li {
+  margin-bottom: 0.9rem;
+  font-size: 1rem;
+  color: #526d7a;
+  position: relative;
+  padding-left: 1.4rem;
+  line-height: 1.7;
+}
+
+.programs-section li::before,
+.recognition-section li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #06b795;
+  font-weight: bold;
+}
+
+.programs-section p {
+  margin-top: 1.2rem;
+  color: #526d7a;
+  line-height: 1.7;
+}
+
+@media (max-width: 992px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .programs-recognition {
+    padding: 2rem;
+  }
+
+  .programs-recognition-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .service-info-box {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}

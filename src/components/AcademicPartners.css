@@ -1,0 +1,346 @@
+.academic-partners {
+  padding: 1.5rem 2rem;
+  background-color: #FBF2E7;
+}
+
+.partners-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.partners-headline {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+.affiliation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+  min-width: 90px;
+}
+
+.affiliation-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 60px;
+  background: transparent;
+  overflow: hidden;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.affiliation-item:nth-child(1) .affiliation-logo-wrapper {
+  width: 145px;
+  height: 80px;
+}
+
+.affiliation-item:nth-child(4) .affiliation-logo-wrapper {
+  width: 130px;
+  height: 70px;
+}
+
+.affiliation-item:nth-child(8) .affiliation-logo-wrapper {
+  width: 100px;
+  height: 55px;
+}
+
+.affiliation-item:nth-child(2) .affiliation-logo-wrapper,
+.affiliation-item:nth-child(3) .affiliation-logo-wrapper {
+  width: 145px;
+  height: 80px;
+}
+
+.affiliation-item:nth-child(5) .affiliation-logo-wrapper,
+.affiliation-item:nth-child(6) .affiliation-logo-wrapper {
+  width: 130px;
+  height: 70px;
+}
+
+.affiliation-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+  mix-blend-mode: multiply;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.affiliation-text-fallback {
+  font-size: 33px;
+  font-weight: 800;
+  color: #006772;
+  text-align: center;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.affiliation-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #0F242E;
+  text-align: center;
+  line-height: 1.3;
+  max-width: 120px;
+}
+
+@media (max-width: 1024px) {
+  .academic-partners {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .partners-container {
+    max-width: 800px;
+  }
+  
+  .partners-headline {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .partners-logos {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .affiliation-item {
+    min-width: 85px;
+    gap: 0.625rem;
+  }
+
+  .affiliation-logo-wrapper {
+    width: 100px;
+    height: 55px;
+    background: transparent;
+    overflow: hidden;
+    padding: 0.4rem;
+    box-sizing: border-box;
+  }
+
+  .affiliation-item:nth-child(1) .affiliation-logo-wrapper {
+    width: 135px;
+    height: 75px;
+  }
+
+  .affiliation-item:nth-child(4) .affiliation-logo-wrapper {
+    width: 120px;
+    height: 65px;
+  }
+
+  .affiliation-item:nth-child(8) .affiliation-logo-wrapper {
+    width: 90px;
+    height: 50px;
+  }
+
+  .affiliation-item:nth-child(2) .affiliation-logo-wrapper,
+  .affiliation-item:nth-child(3) .affiliation-logo-wrapper {
+    width: 135px;
+    height: 75px;
+  }
+
+  .affiliation-item:nth-child(5) .affiliation-logo-wrapper,
+  .affiliation-item:nth-child(6) .affiliation-logo-wrapper {
+    width: 120px;
+    height: 65px;
+  }
+
+  .affiliation-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: transparent;
+    mix-blend-mode: multiply;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .affiliation-text-fallback {
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .affiliation-name {
+    font-size: 0.7rem;
+    max-width: 110px;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 768px) {
+  .academic-partners {
+    padding: 1rem 1rem;
+  }
+  
+  .partners-container {
+    max-width: 100%;
+  }
+  
+  .partners-headline {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .partners-logos {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .affiliation-item {
+    min-width: 100px;
+    gap: 0.75rem;
+  }
+
+  .affiliation-logo-wrapper {
+    width: 110px;
+    height: 60px;
+    background: transparent;
+    overflow: hidden;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+
+  .affiliation-item:nth-child(1) .affiliation-logo-wrapper {
+    width: 145px;
+    height: 80px;
+  }
+
+  .affiliation-item:nth-child(4) .affiliation-logo-wrapper {
+    width: 130px;
+    height: 70px;
+  }
+
+  .affiliation-item:nth-child(8) .affiliation-logo-wrapper {
+    width: 100px;
+    height: 55px;
+  }
+
+  .affiliation-item:nth-child(2) .affiliation-logo-wrapper,
+  .affiliation-item:nth-child(3) .affiliation-logo-wrapper {
+    width: 145px;
+    height: 80px;
+  }
+
+  .affiliation-item:nth-child(5) .affiliation-logo-wrapper,
+  .affiliation-item:nth-child(6) .affiliation-logo-wrapper {
+    width: 130px;
+    height: 70px;
+  }
+
+  .affiliation-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background: transparent;
+    mix-blend-mode: multiply;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .affiliation-text-fallback {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  .affiliation-name {
+    font-size: 0.75rem;
+    max-width: 120px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .academic-partners {
+    padding: 1rem 0.75rem;
+  }
+  
+  .partners-headline {
+    font-size: 1.25rem;
+    margin-bottom: 0.875rem;
+  }
+  
+  .partners-logos {
+    gap: 1rem;
+  }
+  
+  .affiliation-item {
+    min-width: 90px;
+    gap: 0.5rem;
+  }
+  
+  .affiliation-logo-wrapper {
+    width: 90px;
+    height: 50px;
+    padding: 0.4rem;
+    box-sizing: border-box;
+  }
+
+  .affiliation-item:nth-child(1) .affiliation-logo-wrapper {
+    width: 115px;
+    height: 65px;
+  }
+
+  .affiliation-item:nth-child(4) .affiliation-logo-wrapper {
+    width: 105px;
+    height: 58px;
+  }
+
+  .affiliation-item:nth-child(8) .affiliation-logo-wrapper {
+    width: 85px;
+    height: 47px;
+  }
+
+  .affiliation-item:nth-child(2) .affiliation-logo-wrapper,
+  .affiliation-item:nth-child(3) .affiliation-logo-wrapper {
+    width: 115px;
+    height: 65px;
+  }
+
+  .affiliation-item:nth-child(5) .affiliation-logo-wrapper,
+  .affiliation-item:nth-child(6) .affiliation-logo-wrapper {
+    width: 105px;
+    height: 58px;
+  }
+  
+  .affiliation-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .affiliation-text-fallback {
+    font-size: 20px;
+  }
+  
+  .affiliation-name {
+    font-size: 0.7rem;
+    max-width: 100px;
+  }
+}
+

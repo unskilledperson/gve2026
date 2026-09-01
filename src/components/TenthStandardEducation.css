@@ -1,0 +1,849 @@
+.tenth-standard-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #006772;
+}
+
+/* Hero Section */
+.tenth-hero-section {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #006772;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+.tenth-hero-oval {
+  position: absolute;
+  width: 1450px;
+  height: 500px;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fbf2e7;
+  border-radius: 50%;
+}
+
+/* Main Content */
+.tenth-main-content {
+  position: relative;
+  z-index: 10;
+  margin-top: -200px;
+}
+
+/* Top buttons */
+.tenth-top-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.tenth-back-link-top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #3d858f;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+}
+
+.tenth-program-tag-center {
+  background-color: rgba(0, 99, 112, 0.1);
+  color: #00444d;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+/* Centered section */
+.tenth-centered-section {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tenth-main-title {
+  font-size: 2.125rem;
+  font-weight: 700;
+  color: #00444d;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Secondary tag */
+.tenth-secondary-tag {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 6px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.tenth-secondary-icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* Bottom Section */
+.tenth-bottom-section {
+  background-color: #006772;
+  padding: 4rem 0;
+  border-radius: 50px 50px 0 0;
+}
+
+.tenth-bottom-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+}
+
+/* Columns */
+.tenth-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tenth-right-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* About Program */
+.tenth-about-program-card {
+  width: 850px;
+  height: auto;
+  background-color: #fdf8f2;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 1.5rem;
+}
+
+.tenth-about-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.tenth-about-card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #00444d;
+}
+
+.tenth-about-card-description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #3d858f;
+}
+
+/* Info Cards (Career + Eligibility) */
+.tenth-info-card {
+  background-color: #fdf8f2;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Career width */
+.tenth-left-column .tenth-info-card {
+  width: 850px;
+}
+
+/* Eligibility adjustments */
+.tenth-right-column .tenth-info-card {
+  width: 420px;
+  padding: 1.2rem;
+  min-height: 130px;
+}
+
+/* Education grid */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+  row-gap: 16px;
+}
+
+/* Education boxes */
+.higher-education-box {
+  width: 100%;
+  height: 50px;
+  background-color: #fdf8f2;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #00444d;
+}
+
+/* Diploma program below Higher Secondary */
+.higher-education-box:nth-child(3) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.plain-icon {
+  width: 20px;
+  height: 20px;
+  background: none;
+  padding: 0;
+  filter: contrast(1.2) brightness(1.1);
+}
+
+/* Buttons */
+.tenth-card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.tenth-btn-apply {
+  background-color: #006772;
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tenth-btn-info {
+  background-color: #fdf8f2;
+  color: #006772;
+  border: 1px solid #006772;
+  padding: 0.875rem 2rem;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .tenth-bottom-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tenth-about-program-card,
+  .tenth-left-column .tenth-info-card,
+  .tenth-right-column .tenth-info-card {
+    width: 100%;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .higher-education-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tenth-hero-section {
+    height: 450px;
+    margin-top: -60px;
+  }
+
+  .tenth-hero-oval {
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    top: -80px;
+  }
+
+  .tenth-main-content {
+    margin-top: -150px;
+  }
+
+  .tenth-centered-section {
+    top: 100px;
+    padding: 0 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tenth-top-buttons {
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .tenth-back-link-top {
+    font-size: 12px;
+    left: 0;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  .tenth-program-tag-center {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .tenth-main-title {
+    font-size: 1.75rem;
+    margin-top: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .tenth-title-line {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .tenth-secondary-tag {
+    font-size: 12px;
+    padding: 5px 12px;
+    margin-top: 8px;
+  }
+
+  .tenth-secondary-icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  .tenth-meta-tags {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 12px;
+  }
+
+  .tenth-meta-tag {
+    font-size: 12px;
+    padding: 5px 14px;
+  }
+
+  .tenth-bottom-section {
+    padding: 3rem 0;
+    border-radius: 40px 40px 0 0;
+  }
+
+  .tenth-bottom-container {
+    padding: 0 1.5rem;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+  }
+
+  .tenth-left-column,
+  .tenth-right-column {
+    gap: 1.5rem;
+  }
+
+  .tenth-about-program-card,
+  .tenth-info-card {
+    padding: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tenth-about-card-header {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tenth-about-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .tenth-about-card-title {
+    font-size: 18px;
+  }
+
+  .tenth-card-title {
+    font-size: 1.25rem;
+  }
+
+  .tenth-card-description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .education-grid {
+    gap: 12px;
+    grid-template-columns: 1fr;
+  }
+
+  .higher-education-box {
+    height: auto;
+    min-height: 45px;
+    padding: 12px;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .plain-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .tenth-card-buttons {
+    gap: 0.875rem;
+  }
+
+  .tenth-btn-apply,
+  .tenth-btn-info {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tenth-hero-section {
+    height: 380px;
+    margin-top: -50px;
+  }
+
+  .tenth-hero-oval {
+    height: 320px;
+    top: -60px;
+  }
+
+  .tenth-main-content {
+    margin-top: -120px;
+  }
+
+  .tenth-centered-section {
+    top: 80px;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tenth-top-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .tenth-back-link-top {
+    font-size: 11px;
+    left: 0;
+    position: relative;
+    margin-bottom: 0.5rem;
+  }
+
+  .tenth-program-tag-center {
+    font-size: 10px;
+    padding: 4px 10px;
+    align-self: flex-start;
+  }
+
+  .tenth-main-title {
+    font-size: 1.5rem;
+    margin-top: 12px;
+    gap: 0.25rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .tenth-title-line {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .tenth-secondary-tag {
+    font-size: 11px;
+    padding: 4px 10px;
+    margin-top: 6px;
+  }
+
+  .tenth-secondary-icon {
+    width: 9px;
+    height: 9px;
+  }
+
+  .tenth-meta-tags {
+    gap: 0.5rem;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .tenth-meta-tag {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+
+  .tenth-bottom-section {
+    padding: 2.5rem 0;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .tenth-bottom-container {
+    padding: 0 1rem;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+  }
+
+  .tenth-left-column,
+  .tenth-right-column {
+    gap: 1.25rem;
+  }
+
+  .tenth-about-program-card,
+  .tenth-info-card {
+    padding: 1.25rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .tenth-about-card-header {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .tenth-about-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .tenth-about-card-title {
+    font-size: 16px;
+  }
+
+  .tenth-card-title {
+    font-size: 1.1rem;
+  }
+
+  .tenth-card-description {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .education-grid {
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .higher-education-box {
+    height: auto;
+    min-height: 40px;
+    padding: 10px;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .plain-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .tenth-btn-apply,
+  .tenth-btn-info {
+    padding: 12px 24px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .tenth-card-buttons {
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+}
+
+.tenth-standard-page {
+  animation: pageFade 0.8s ease-out forwards;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tenth-hero-oval {
+  animation: ovalBreath 6s ease-in-out infinite;
+}
+
+@keyframes ovalBreath {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.02);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+.tenth-main-title {
+  animation: titleFade 0.9s ease forwards;
+}
+
+@keyframes titleFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tenth-about-program-card,
+.tenth-info-card {
+  animation: cardAppear 0.8s ease forwards;
+}
+
+@keyframes cardAppear {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.higher-education-box {
+  opacity: 0;
+  animation: boxFade 0.6s ease forwards;
+}
+
+.higher-education-box:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.higher-education-box:nth-child(2) {
+  animation-delay: 0.35s;
+}
+.higher-education-box:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+@keyframes boxFade {
+  to {
+    opacity: 1;
+  }
+}
+.tenth-btn-apply {
+  animation: buttonPulse 5s ease-in-out infinite;
+}
+
+@keyframes buttonPulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.92;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   SCROLL-TRIGGERED ANIMATIONS
+   ============================================ */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Slide In from Left */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+/* Slide In from Right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+/* Fade In Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Fade In Scale */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-scale {
+  animation: fadeInScale 1s ease-out forwards;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse Subtle Animation */
+@keyframes pulseSubtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 2s ease-in-out infinite;
+}
+
+/* Pulse Icon Animation */
+@keyframes pulseIcon {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(6, 183, 149, 0.7);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(6, 183, 149, 0);
+  }
+}
+
+.animate-pulse-icon {
+  animation: pulseIcon 2s ease-in-out infinite;
+}
+
+/* Bounce Subtle Animation */
+@keyframes bounceSubtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounceSubtle 2.5s ease-in-out infinite;
+}
+
+/* Pulse Button Animation */
+@keyframes pulseButton {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+  }
+}
+
+.animate-pulse-button {
+  animation: pulseButton 2s ease-in-out infinite;
+}
+
+/* Initial state for scroll-triggered elements */
+.tenth-left-column,
+.tenth-right-column,
+.tenth-top-buttons,
+.tenth-title-section,
+.tenth-secondary-tag {
+  opacity: 0;
+}
+
+/* When animation class is added, element becomes visible */
+.tenth-left-column.animate-slide-in-left,
+.tenth-right-column.animate-slide-in-right,
+.tenth-top-buttons.animate-fade-in,
+.tenth-title-section.animate-fade-in-scale,
+.tenth-secondary-tag.animate-fade-in-up {
+  opacity: 1;
+}
